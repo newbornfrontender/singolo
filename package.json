@@ -15,7 +15,7 @@
     "stylelint-prettier": "^1.1.2"
   },
   "scripts": {
-    "format": "prettier --write **/*.{html,js*}",
+    "format": "prettier --write **/*.{html,js*,md}",
     "lint": "stylelint --fix **/*.css",
     "lint:check": "stylelint-config-prettier-check",
     "serve": "serve"
