@@ -3,5 +3,14 @@
   "version": "1.0.0",
   "repository": "git@github.com:newbornfrontender/singolo.git",
   "author": "newbornfrontender <newbornfrontender@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "serve": "^11.3.0",
+    "stylelint": "^13.2.0",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-prettier": "^1.1.2"
+  }
 }
