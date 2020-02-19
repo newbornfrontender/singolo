@@ -11,6 +11,37 @@
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.0.0",
     "stylelint-prettier": "^1.1.2"
+  },
+  "scripts": {
+    "format": "prettier --write **/*.{html,js*}",
+    "lint": "stylelint --fix **/*.css",
+    "lint:check": "stylelint-config-prettier-check",
+    "serve": "serve"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "arrowParens": "always",
+    "endOfLine": "lf"
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-prettier/recommended"
+    ],
+    "plugins": [
+      "stylelint-order",
+      "stylelint-config-rational-order/plugin"
+    ],
+    "rules": {
+      "order/properties-order": [],
+      "plugin/rational-order": [
+        true,
+        {}
+      ]
+    }
   }
 }
