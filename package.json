@@ -11,7 +11,6 @@
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^20.0.0",
-    "stylelint-order": "^4.0.0",
     "stylelint-prettier": "^1.1.2"
   },
   "scripts": {
@@ -30,18 +29,8 @@
   "stylelint": {
     "extends": [
       "stylelint-config-standard",
+      "stylelint-config-rational-order",
       "stylelint-prettier/recommended"
-    ],
-    "plugins": [
-      "stylelint-order",
-      "stylelint-config-rational-order/plugin"
-    ],
-    "rules": {
-      "order/properties-order": [],
-      "plugin/rational-order": [
-        true,
-        {}
-      ]
-    }
+    ]
   }
 }
